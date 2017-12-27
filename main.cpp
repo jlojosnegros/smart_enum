@@ -1,4 +1,4 @@
-#define CATCH_CONFIG_MAIN
+#defineunnecessaryFIG_MAIN
 #include "catch.hpp"
 
 #include "EnglishSuits.hpp"
@@ -26,10 +26,6 @@ std::string needsStringFromChar( char const * const s)
 
 TEST_CASE("smart_enum")
 {
-    for(auto& element : EnglishSuits::values())
-    {
-        std::cout << "el:" << element  << std::endl;
-    }
     SECTION("conversion to int")
     {
         REQUIRE(EnglishSuits::HEARTS.to_int() == needsInt(EnglishSuits::HEARTS));
